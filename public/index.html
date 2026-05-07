@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C-Kurs · Programmieren lernen</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/c.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/bash.min.js" defer></script>
+</head>
+<body>
+  <button id="menu-toggle" aria-label="Menü öffnen">☰</button>
+
+  <aside id="sidebar">
+    <header class="brand">
+      <h1>C-Kurs</h1>
+      <p class="subtitle">Programmieren lernen</p>
+    </header>
+
+    <div class="progress-summary">
+      <span id="progress-text">0 / 0 Lektionen</span>
+      <div class="progress-bar"><div id="progress-fill"></div></div>
+    </div>
+
+    <nav id="lesson-nav"></nav>
+
+    <footer class="sidebar-footer">
+      <button id="reset-progress" title="Fortschritt zurücksetzen">Fortschritt zurücksetzen</button>
+    </footer>
+  </aside>
+
+  <main id="content">
+    <article id="lesson-view">
+      <p class="loading">Lade Lektion...</p>
+    </article>
+
+    <div class="lesson-nav-buttons">
+      <button id="prev-btn">← Vorherige</button>
+      <button id="complete-btn" class="primary">Als erledigt markieren</button>
+      <button id="next-btn">Nächste →</button>
+    </div>
+  </main>
+
+  <script src="lessons.js"></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
